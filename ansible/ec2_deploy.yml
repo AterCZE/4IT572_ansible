@@ -5,18 +5,18 @@
   tasks:
     - name: Launch EC2 instance
       amazon.aws.ec2:
-        instance_type: t2.micro
+        instance_type: t2.small
         image: ami-04902260ca3d33422
         region: us-east-1
         key_name: devops
-        vpc_subnet_id: subnet-002c9289acf4acfd9
+        vpc_subnet_id: subnet-0a8bbbe4975e61e77
         assign_public_ip: yes
         count: 1
         group: eshop
         wait: true
-        aws_access_key: "{{access_key}}"
-        aws_secret_key: "{{secret_key}}"
-        security_token: "{{session_token}}"
+        aws_access_key: "ASIAQM4ZIP335IFHR76Y"
+        aws_secret_key: "ASIAQM4ZIP335IFHR76Y"
+        security_token: "FwoGZXIvYXdzEDoaDD3WN6tcMCrk8spp+SK3AZ5uitLiu4hz/RVUMq7tPJh+2dQTalQPd2Axk+Q7n6Bp4ljsv8mUJhPUHLvJoWEOSdiaQr6yKOyQ6VtBUrQ/wSv3jCvDO1QhyWE/rx0NnLkBNmX5Deuz+DGReOQxdZ1Wen+3v+S+BKTc3e+W6P3kMwxAE4a90T7OXAkvUma3Bj55FFnrtembRD4W15wp/CZYXRfkNrhn/JG/xxHoi6uWsEdIzv/WuFzCvMqiqdUrOPiWYtnIpmtU2iiLsZmNBjItfYAvCMXsyOi3diIrmO/D+BsGFc2Ywp6S8FXI/VXp5dS+IVMGKV8O1BDF926h"
       register: ec2
 
     - name: Add new instance to host group
@@ -40,7 +40,7 @@
     - name: Add Centos Extras
       shell: yum-config-manager --enable extras
       become: yes
-    - name: Enable Docker package
+    - name: Enable docker package
       shell: amazon-linux-extras enable docker
       become: yes
     - name: Install Docker and Git
@@ -60,7 +60,7 @@
       become: yes
     - name: Checkout Git repo
       git:
-        repo: "https://github.com/AterCZE/4IT572_docker_my.git"
+        repo: "https://github.com/vfalada/4IT572_docker.git"
         dest: ./app
     - name: Build eshop docker
       shell: cd app && docker build -t eshop:latest .
