@@ -16,7 +16,7 @@
         wait: true
         access_key: "ASIAQM4ZIP33UT2UVHYM"
         secret_key: "MPJpNr0IWQxZAKh0r/zzs6GmaiLM1Btdf2Ed+SD3"
-        session_token: "FwoGZXIvYXdzED4aDESmtKwgKOT47p2jViK3AZZE0UUrH9udirghkQRdx6pFHxRIbR9Khtmqe35hESJ3mAxcYH503tHqW6LA18BekakZXZDan+cQhTnmyyakymuhVNyRdGOjgHhd1pL0qBgsAr2DX4tYxxumOJ54UV+L3KWbG0i/pg1h+DCpE2r8GsyihZivAjeacUOjJeEuoZdjn9s5H3Rjlt8NpDNVuImMT0URsByUYo1oH8CQzAnavN3BwUj/PVOPTUs2gbIclQPn0l+oa0AFkCizjZqNBjItw3O+H7XSxgYabo2zcj5Dps4/koKHQsDd5isR0cjGyuncPvpQEgtg8fwBJG7b"
+        security_token: "FwoGZXIvYXdzED4aDESmtKwgKOT47p2jViK3AZZE0UUrH9udirghkQRdx6pFHxRIbR9Khtmqe35hESJ3mAxcYH503tHqW6LA18BekakZXZDan+cQhTnmyyakymuhVNyRdGOjgHhd1pL0qBgsAr2DX4tYxxumOJ54UV+L3KWbG0i/pg1h+DCpE2r8GsyihZivAjeacUOjJeEuoZdjn9s5H3Rjlt8NpDNVuImMT0URsByUYo1oH8CQzAnavN3BwUj/PVOPTUs2gbIclQPn0l+oa0AFkCizjZqNBjItw3O+H7XSxgYabo2zcj5Dps4/koKHQsDd5isR0cjGyuncPvpQEgtg8fwBJG7b"
       register: ec2
 
     - name: Add new instance to host group
