@@ -9,7 +9,7 @@
         image: ami-04902260ca3d33422
         region: us-east-1
         key_name: devops
-        vpc_subnet_id: subnet-002c9289acf4acfd9
+        vpc_subnet_id: subnet-0e9ad8aabeff05a66
         assign_public_ip: yes
         count: 1
         group: eshop
@@ -61,7 +61,7 @@
       become: yes
     - name: Checkout Git repo
       git:
-        repo: "https://github.com/vfalada/4IT572_docker.git"
+        repo: "https://github.com/AterCZE/4IT572_docker_my"
         dest: ./app
     - name: Build eshop docker
       shell: cd app && docker build -t eshop:latest .
