@@ -17,7 +17,7 @@
         count: 1
         group: eshop
         wait: true
-        aws_access_key: "{{access_key}}"
+        aws_access_key: "{{access_keyz}}"
         aws_secret_key: "{{secret_key}}"
         security_token: "{{session_token}}"
       register: ec2
