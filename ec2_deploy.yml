@@ -3,9 +3,9 @@
   connection: local
 
   tasks:
+    - include_vars: secret.yml
     - name: Launch EC2 instance
       amazon.aws.ec2:
-        include_vars: secret.yml
         instance_type: t2.micro
         image: ami-04902260ca3d33422
         region: us-east-1
