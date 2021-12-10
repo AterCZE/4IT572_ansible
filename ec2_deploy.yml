@@ -9,7 +9,7 @@
     - name: Launch EC2 instance
       amazon.aws.ec2:
         instance_type: t2.micro
-        image: ami-04902260ca3d33422
+        image: ami-09ce2fc392a4c0fbc
         region: eu-west-1
         key_name: devops
         vpc_subnet_id: subnet-0cc2517bd0bc7d393
