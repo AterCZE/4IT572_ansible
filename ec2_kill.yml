@@ -1,0 +1,10 @@
+- name: Kill previous instance
+  hosts: localhost
+  connection: local
+
+  tasks:
+    - name: Kill previous instance
+      ec2_instance:
+        state: absent
+        filters:
+          tag:purpose: eshop
