@@ -81,10 +81,5 @@
     - name: Kill previous instance
       ec2_instance:
         state: absent
-          filters:
-            tag:purpose: eshop
-
-
-    - name: Launch EC2 instance
-      amazon.aws.ec2:
-        instance_type: t2.micro
+        filters:
+          tag:purpose: eshop
