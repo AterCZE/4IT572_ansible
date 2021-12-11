@@ -11,6 +11,8 @@
         instance_type: t2.micro
         image: ami-09ce2fc392a4c0fbc
         region: eu-west-1
+        tags:
+          purpose: eshop
         key_name: devops
         vpc_subnet_id: subnet-0caa29a510afa3fc2
         assign_public_ip: yes
